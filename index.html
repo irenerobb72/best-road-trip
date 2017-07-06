@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Best Roadtrip</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+    body {
+      background-color: #434050;
+    }
+    h1 {
+      color: #8c96a1;
+      font-family: 'Montserrat', sans-serif;
+    }
+    #map {
+      width: 100%;
+      height: 400px;
+      background-color: grey;
+    }
+    </style>
+  </head>
+  <header>
+    <ul>
+      <li>
+        <h1>The Greatest Roadtrip</h1>
+      </li>
+      <li>
+        <a href=""
+      </li>
+    </ul>
+  </header>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var rushmore = {lat: 43.877092, lng: -103.455762 }
+        var glacier = {lat: 48.796483, lng: -113.707263 }
+        var moonCraters = {lat: 43.215315, lng: -113.476138 }
+        var soshone = {lat: 42.593610, lng: -114.400238 }
+        var hellsCanyon = {lat: 45.552200, lng: -116.448517 }
+        var olympicPark = {lat: 47.826860, lng: -123.586749 }
+        var seattle = {lat: 47.609240, lng: -122.341042 }
+        var columbiaRiver = {lat: 45.723273, lng: -121.574495 }
+        var multnomah = {lat: 45.576124, lng: -122.116458 }
+        var portland = {lat: 45.520235, lng: -122.674341 }
+        var leavenworth = {lat: 47.596521, lng: -120.663229 }
+        var mtRainier = {lat: 46.881832, lng: -121.721494 }
+        var northCascades = {lat: 48.770948, lng: -121.150839 }
+        var lakeWenatchee = {lat: 47.812079, lng: -120.724731 }
+        var greatFalls = {lat: 47.492875, lng: -111.280863 }
+        var buddhas = {lat: 47.191772, lng: -114.089662}
+        var vancouver = {lat: 49.279829, lng: -123.127344}
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: glacier
+        });
+        function createMarker (position, map){
+          var marker = new google.maps.Marker({
+            position: position,
+            map: map
+          });
+         }
+         createMarker(rushmore, map)
+         createMarker(glacier, map)
+         createMarker(moonCraters, map)
+         createMarker(soshone, map)
+         createMarker(hellsCanyon, map)
+         createMarker(olympicPark, map)
+         createMarker(seattle, map)
+         createMarker(columbiaRiver, map)
+         createMarker(multnomah, map)
+         createMarker(portland, map)
+         createMarker(leavenworth, map)
+         createMarker(mtRainier, map)
+         createMarker(northCascades, map)
+         createMarker(lakeWenatchee, map)
+         createMarker(greatFalls, map)
+         createMarker(buddhas, map)
+         createMarker(vancouver, map)
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyxq8Qh5EDjO5HVRhvRgIAFUCRCe7H4zs&callback=initMap">
+    </script>
+    <script src="bundle.js"></script>
+  </body>
+</html>
