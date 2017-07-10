@@ -17,16 +17,28 @@
     #map {
       width: 100%;
       height: 400px;
-      background-color: grey;
+      background-color: grey
     }
+    #sideP {
+      padding-left: 10px;
+      color: #8c96a1;
+      font-family: 'Montserrat', sans-serif;
+      margin-right: auto;
+    }
+    #rushmore {
+      padding-top: 60px;
+      padding-left: 30px;
+    }
+
     </style>
   </head>
   <header>
-    <ul>
-      <li>
+    <div id="pageName">
         <h1>The Greatest Roadtrip</h1>
-      </li>
-    </ul>
+    </div>
+    <div id="sideP">
+        <p>for mom and irene<p>
+    </div>
   </header>
   <body>
     <div id="map"></div>
@@ -81,6 +93,8 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyxq8Qh5EDjO5HVRhvRgIAFUCRCe7H4zs&callback=initMap">
     </script>
+    <img id="rushmore"src="img/mountrushmore.jpg" width="400" height="320"/>
     <script src="bundle.js"></script>
+
   </body>
 </html>
