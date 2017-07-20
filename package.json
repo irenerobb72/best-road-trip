@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/irenerobb72/best-road-trip#readme",
   "dependencies": {
+    "envfile": "^2.1.1",
     "foreman": "2.0.0"
   }
 }
